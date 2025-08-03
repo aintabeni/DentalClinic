@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"ClinicName" Dental Website</title>
+    <title>Best Dental Clinic in Addis Ababa | "Clinic Name" Dental</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boilerplate.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm fixed-top py-2">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <!-- Mobile View: Toggler + Center Logo + Contact -->
+            <div class="d-md-none d-flex align-items-center justify-content-between w-100 px-2">
+                <!-- Toggler Button -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mainNav">
+                    <div class="hamburger-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <!-- Center Logo -->
+                <a class="navbar-brand mx-auto text-center" href="#">
+                    <img src="images/logo.png" alt="Logo" height="40" />
+                    <span class="fw-bold text-primary">Your Company</span>
+                </a>
+
+                <!-- Contact Us Button -->
+                <div>
+                    <a href="#contact" class="btn contact">Contact Us <br> <strong>+251902993372</strong></a>
+                </div>
+            </div>
+
+            <!-- Desktop View -->
+            <div class="collapse navbar-collapse d-none d-md-flex justify-content-between w-100">
+                <!-- Left Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="Logo" height="40" class="me-2" />
+                    <span class="fw-bold text-primary">Your Company</span>
+                </a>
+
+                <!-- Center Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                </ul>
+
+                <!-- Right Contact Button -->
+                <a href="#contact" class="btn contact"><span>Contact Us:</span><strong>+251902993372</strong></a>
+            </div>
+
+            <!-- Mobile Offcanvas -->
+            <div class="offcanvas offcanvas-start d-md-none bg-white" tabindex="-1" id="mainNav">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-primary fw-bold">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#services">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <section class="hero" style="height: 100vh; padding-top: 100px;">
+            <h1 class="display-5 fw-bold text-white">
+                Trusted Dental Care in Addis Ababa
+            </h1>
+            <p class="lead text-light mt-3">
+                Modern, pain-free dentistry with expert care and advanced technology. Book your appointment today at
+                "Clinic Name" — your smile deserves the best.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4">Book an Appointment</a>
+        </section>
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Dental Services</h2>
+                <p class="section-description">From cleanings to implants, we offer comprehensive care for your smile.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="icons/cleaning.png" alt="Check-up Icon" />
+                        <h3>Check-ups & Cleaning</h3>
+                        <p>Keep your teeth and gums healthy with regular preventive care.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="icons/tooth.svg" alt="Fillings Icon" />
+                        <h3>Fillings & Cavities</h3>
+                        <p>Restore decayed teeth with tooth-colored, durable fillings.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="icons/teeth-whitening.png" alt="Teeth Whitening Icon" />
+                        <h3>Teeth Whitening</h3>
+                        <p>Brighten your smile safely with professional whitening treatments.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="icons/dental-implants.png" alt="Implant Icon" />
+                        <h3>Dental Implants</h3>
+                        <p>Replace missing teeth with strong, natural-looking implants.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="icons/braces.png" alt="Braces Icon" />
+                        <h3>Braces & Invisalign</h3>
+                        <p>Straighten your teeth comfortably with modern orthodontics.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="icons/emergency.svg" alt="Emergency Icon" />
+                        <h3>Emergency Care</h3>
+                        <p>Urgent dental help for pain, swelling, or broken teeth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
